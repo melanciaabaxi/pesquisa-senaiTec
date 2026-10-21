@@ -15,33 +15,133 @@
 
     <section>
         <form action="index.html" method="get">
-        <fieldset>
-        <legend>Dados Pessoais</legend>
-            <label for="Username">Nome</label>
-            <input type="text" name="Username" id="Username"
-            required>
-            <button type="submit">Enviar</button>
-        <br>
-            <Label for="UserAge">Idade:</Label>
-            <input type="number" name="UserAge" id="UserAge" required min="12" max="100">
-        <br>
+            <fieldset>
+            <legend>Dados Pessoais</legend>
+                <label for="Username">Nome</label>
+                <input type="text" name="Username" id="Username"
+                required>
+                <button type="submit">Enviar</button>
+            <br>
+                <Label for="UserAge">Idade:</Label>
+                <input type="number" name="UserAge" id="UserAge" required min="12" max="100">
+            <br>
 
-        <label for="userBirthDate"> Data de Nascimento</label>
-        <input type="date" name="userBirthDate" id="userBirthDate">
+            <label for="userBirthDate"> Data de Nascimento</label>
+            <input type="date" name="userBirthDate" id="userBirthDate">
+            <br>
+            <label for="userEmail">Email</label>
+            <input type="email" name="userEmail" id="userEmail" required>
+            <br>
+            <label for="userPhone">Telefone</label>
+            <input type="tel" name="userPhone" id="userPhone" pattern="[0-9{11}]" placeholder="21987654321">
+            <br>
+            <label for="userImage">Upload de Fotos</label>
+            <input type="file" name="userImage" id="userImage">
+            </fieldset>
+
+            <fieldset>
+
+            <legend>Perfil</legend>
+
+            <p>Gênero</p>
+
+            <input type="radio" name="userGender" id="userGender1" value="Masculino">
+            <label for="userGender">Masculino</label>
+
+            <input type="radio" name="userGender" id="userGender2" value="Feminino">
+            <label for="userGender">Feminino</label>
+
+
+            <input type="radio" name="userGender" id="userGender3" value="Outro">
+            <label for="userGender">Prefiro Não Informnar</label>
+
+            <br>
+            
+            <label for="userMaritalStatus">Estado Civil</label>
+            <select name="userMaritalStatus" id="userMaritalStatus">
+            <option value="solteiro">Solteiro(a)</option>
+            <option value="casado">Casado(a)</option>
+            <option value="divorciado">Divorciado(a)</option>
+            <option value="viuvo">Viúvo(a)</option>
+            <option value="uniaoEstavel">União Estável</option>
+
+            </select>
+
+            <label for="userstate">Unidade Federativa</label>
+            <select name="userstate" id="userstate">
+            <option value="Acre">AC</option>
+            <option value="Amápa">AP</option>
+            <option value="Amazonas">AM</option>
+            <option value="Bahia">BA</option>
+            <option value="Ceará">CE</option>
+            <option value="Distrito Federal">DF</option>
+            <option value="Espírito Santo">ES</option>
+            <option value="Goiás">GO</option>
+            <option value="Maranhão">MA</option>
+            <option value="Mato Grosso">MT</option>
+            <option value="Mato Grosso do Sul">MS</option>
+            <option value="Minas Gerais">MG</option>
+            <option value="Paraíba">PB</option>
+            <option value="Paraná">PR</option>
+            <option value="Pernanbuco">PE</option>
+            <option value="Piauí">PI</option>
+            <option value="Rio de Janeiro">RJ</option>
+            <option value="Rio Grande do Norte">RN</option>
+            <option value="Rio Grande do Sul">RS</option>
+            <option value="Santa Catarina">SC</option>
+            <option value="São Paulo">SP</option>
+            <option value="Sergipe">SE</option>
+            <option value="Rondonia">RO</option>
+            <option value="Roraima">RR</option>
+            <option value="Pará">PA</option>
+            <option value="Tocantins">TO </option>
+            <option value="Alagoas">AL</option>
+
+            </select>
+            <br>
+          <label for="userCity">Cidade</label>
+          <input type="text" name="userCity" id="userCity" placeholder="Fortaleza">
+        
+        </fieldset>
+        <fieldset>
+            <legend>Hábitos</legend>
+
+            <p>Redes Sociais</p>
+
+           <label for="userSocial">Instagram</label>
+          <input type="checkbox" name="userSocial" id="userSocial1">
+          <br>
+
+           <label for="userSocial">Facebook</label>
+         <input type="checkbox" name="userSocial" id="userSocial2">
+       <br>
+
+        <label for="userSocial">Whathzap</label>
+        <input type="checkbox" name="userSocial" id="userSocial2">
+         <br>
+
+
+
+         <label for="userMusic">Estilo Musical</label>
+        <input type="text" name="userMusic" id="userMusic" list="userMusics">
+        <datalist id="userMusics">
+     <option value="Rock"></option>
+     <option value="Pop"></option>
+     <option value="Sertanejo"></option>
+     <option value="Funk"></option>
+    <option value="Pagode"></option>
+    <option value="Forró"></option>
+
+        </datalist>
         <br>
-        <label for="userEmail">Email</label>
-        <input type="email" name="userEmail" id="userEmail" required>
-        <br>
-        <label for="userPhone">Telefone</label>
-        <input type="tel" name="userPhone" id="userPhone" pattern="[0-9{11}]" placeholder="21987654321">
-        <br>
-        <label for="userImage">Upload de Fotos</label>
-        <input type="file" name="userImage" id="userImage">
+            <label for="">Cor Favorita:</label>
+            <input type="color" name="userfavoritecolor" id="userfavoritecolor">
+
         </fieldset>
 
-        <button type="submit">Enviar</button>
-
+            <button type="submit">Enviar</button>
         </form>
+
     </section>
 </main>
 </body>

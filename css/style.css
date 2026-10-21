@@ -6,6 +6,7 @@
 
 body{
     background-color: aliceblue;
+    font-family: "work Sans", sans-serif;
 }
 main{
     width: 100%;
@@ -37,4 +38,18 @@ legend{
 }
 input{
     width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px ;
+}
+input[type="radio"],[type="checkbox"]{
+
+width: auto;
+
+}
+
+p{
+    margin-bottom: 15px;
+    font-weight: bold;
 }
