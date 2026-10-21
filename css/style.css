@@ -53,3 +53,7 @@ p{
     margin-bottom: 15px;
     font-weight: bold;
 }
+input[type="Color"]{
+width: 40px;
+padding: 0 5px;
+}
